@@ -94,9 +94,9 @@ int main(int argc, char** argv)
 	{
 		record[i]=0;
 	}
-	//Инициализация
+	//РРЅРёС†РёР°Р»РёР·Р°С†РёСЏ
 	glutInit(&argc, argv);
-	glutInitDisplayMode(GLUT_DOUBLE|GLUT_RGBA|GLUT_DEPTH|GLUT_STENCIL);//статика- GLUT_SINGLE, динамика- GLUT_DOUBLE(2 БУФЕРА)
+	glutInitDisplayMode(GLUT_DOUBLE|GLUT_RGBA|GLUT_DEPTH|GLUT_STENCIL);//СЃС‚Р°С‚РёРєР°- GLUT_SINGLE, РґРёРЅР°РјРёРєР°- GLUT_DOUBLE(2 Р‘РЈР¤Р•Р Рђ)
 	glutInitWindowSize(game.w, game.h);
 	system("pause");
 	cout<<endl;
@@ -111,7 +111,7 @@ int main(int argc, char** argv)
 	glEnable(GL_LIGHTING);	
 	glEnable(GL_LIGHT0);
 	glColorMaterial(GL_FRONT_AND_BACK,GL_AMBIENT_AND_DIFFUSE);
-	//Перспективное представление
+	//РџРµСЂСЃРїРµРєС‚РёРІРЅРѕРµ РїСЂРµРґСЃС‚Р°РІР»РµРЅРёРµ
 	inite();
 	glutDisplayFunc(display);	
 	glutSpecialFunc(Skeyboard);
