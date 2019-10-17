@@ -357,7 +357,7 @@ void Game::Death()
 						}
 					}
 				}
-				//Обратно в консоль
+				//РћР±СЂР°С‚РЅРѕ РІ РєРѕРЅСЃРѕР»СЊ
 				system("cls");
 				score=0;
 				cout<<"Your score:"<<lastscore<<endl<<endl;
@@ -368,7 +368,7 @@ void Game::Death()
 				}
 				system ("pause");
 				cout<<"Next Round?(1-Y/2-N):"<<endl;
-//Новая Жизнь------------------
+//РќРѕРІР°СЏ Р–РёР·РЅСЊ------------------
 				cin>>game.Answer;
 				game.start(1,game.Answer);
 //-------------------------
@@ -391,7 +391,7 @@ void Game::drawScene()
 			glBegin(GL_QUADS);
 			glNormal3f(0,1,0);
 				glColor3f(0,0.2,0);
-				glVertex3f(i,-0.02,j+1);//нижняя грань
+				glVertex3f(i,-0.02,j+1);//РЅРёР¶РЅСЏСЏ РіСЂР°РЅСЊ
 				glVertex3f(i,-0.02,j);
 				glVertex3f(i+1,-0.02,j);
 				glVertex3f(i+1,-0.02,j+1);
@@ -402,7 +402,7 @@ void Game::drawScene()
 			glBegin(GL_QUADS);
 			glNormal3f(0,1,0);
 				glColor3f(0,0.5,0);
-				glVertex3f(i,-0.02,j+1);//нижняя грань
+				glVertex3f(i,-0.02,j+1);//РЅРёР¶РЅСЏСЏ РіСЂР°РЅСЊ
 				glVertex3f(i,-0.02,j);
 				glVertex3f(i+1,-0.02,j);
 				glVertex3f(i+1,-0.02,j+1);
@@ -419,7 +419,7 @@ void Game::drawScene()
 			glBegin(GL_QUADS);
 			glNormal3f(0,1,0);
 				glColor3f(0,0.2,0);
-				glVertex3f(i,-0.02,j+1);//нижняя грань
+				glVertex3f(i,-0.02,j+1);//РЅРёР¶РЅСЏСЏ РіСЂР°РЅСЊ
 				glVertex3f(i,-0.02,j);
 				glVertex3f(i+1,-0.02,j);
 				glVertex3f(i+1,-0.02,j+1);
@@ -430,7 +430,7 @@ void Game::drawScene()
 			glBegin(GL_QUADS);
 			glNormal3f(0,1,0);
 				glColor3f(0,0.7,0);
-				glVertex3f(i,-0.02,j+1);//нижняя грань
+				glVertex3f(i,-0.02,j+1);//РЅРёР¶РЅСЏСЏ РіСЂР°РЅСЊ
 				glVertex3f(i,-0.02,j);
 				glVertex3f(i+1,-0.02,j);
 				glVertex3f(i+1,-0.02,j+1);
@@ -481,7 +481,7 @@ void Game::drawSolid()
 
 void Snake::theCube()
 {
-//Голова
+//Р“РѕР»РѕРІР°
 	glMaterialfv(GL_FRONT_AND_BACK,GL_AMBIENT,ambsnake);
 	glMaterialfv(GL_FRONT_AND_BACK,GL_DIFFUSE,difsnake);
 	glMaterialfv(GL_FRONT_AND_BACK,GL_SPECULAR,specsnake);
@@ -493,7 +493,7 @@ void Snake::theCube()
 			glColor3f(1,0,0);
 		else
 			glColor3f(0,0,0);
-	    glVertex3f(cube[0].bx,0,cube[0].bz);//зад
+	    glVertex3f(cube[0].bx,0,cube[0].bz);//Р·Р°Рґ
 		glVertex3f(cube[0].bx,1,cube[0].bz);
 		glVertex3f(cube[0].bx+1,1,cube[0].bz);
 		glVertex3f(cube[0].bx+1,0,cube[0].bz);
@@ -502,7 +502,7 @@ void Snake::theCube()
 			glColor3f(1,0,0);
 		else
 			glColor3f(0,0,0);
-	    glVertex3f(cube[0].bx,0,cube[0].bz+1);//перед
+	    glVertex3f(cube[0].bx,0,cube[0].bz+1);//РїРµСЂРµРґ
 		glVertex3f(cube[0].bx,1,cube[0].bz+1);
 		glVertex3f(cube[0].bx+1,1,cube[0].bz+1);
 		glVertex3f(cube[0].bx+1,0,cube[0].bz+1);
@@ -511,7 +511,7 @@ void Snake::theCube()
 			glColor3f(1,0,0);
 		else
 			glColor3f(0,0,0);
-		glVertex3f(cube[0].bx,0,cube[0].bz+1);//левая
+		glVertex3f(cube[0].bx,0,cube[0].bz+1);//Р»РµРІР°СЏ
 		glVertex3f(cube[0].bx,1,cube[0].bz+1);
 		glVertex3f(cube[0].bx,1,cube[0].bz);
 		glVertex3f(cube[0].bx,0,cube[0].bz);
@@ -520,24 +520,24 @@ void Snake::theCube()
 			glColor3f(1,0,0);
 		else
 			glColor3f(0,0,0);
-		glVertex3f(cube[0].bx+1,0,cube[0].bz+1);//правая
+		glVertex3f(cube[0].bx+1,0,cube[0].bz+1);//РїСЂР°РІР°СЏ
 		glVertex3f(cube[0].bx+1,1,cube[0].bz+1);
 		glVertex3f(cube[0].bx+1,1,cube[0].bz);
 		glVertex3f(cube[0].bx+1,0,cube[0].bz);
 	glNormal3f(0,1,0);
 	glColor3f(0,0,0);
-		glVertex3f(cube[0].bx,1,cube[0].bz);//верх
+		glVertex3f(cube[0].bx,1,cube[0].bz);//РІРµСЂС…
 		glVertex3f(cube[0].bx+1,1,cube[0].bz);
 		glVertex3f(cube[0].bx+1,1,cube[0].bz+1);
 		glVertex3f(cube[0].bx,1,cube[0].bz+1);
 	glNormal3f(0,-1,0);
-		glVertex3f(cube[0].bx,0,cube[0].bz);//низ
+		glVertex3f(cube[0].bx,0,cube[0].bz);//РЅРёР·
 		glVertex3f(cube[0].bx+1,0,cube[0].bz);
 		glVertex3f(cube[0].bx+1,0,cube[0].bz+1);
 		glVertex3f(cube[0].bx,0,cube[0].bz+1);
 	glEnd();
 	
-//Хвост
+//РҐРІРѕСЃС‚
 for(int i = 1; i<cube[0].num ;i++)
    {
  glBegin(GL_QUADS);
@@ -548,32 +548,32 @@ for(int i = 1; i<cube[0].num ;i++)
 	glBegin(GL_QUADS);
 	glNormal3f(0,0,-1);
 	glColor3f(1,0,0);
-	    glVertex3f(cube[i].bx,0,cube[i].bz);//зад
+	    glVertex3f(cube[i].bx,0,cube[i].bz);//Р·Р°Рґ
 		glVertex3f(cube[i].bx,1,cube[i].bz);
 		glVertex3f(cube[i].bx+1,1,cube[i].bz);
 		glVertex3f(cube[i].bx+1,0,cube[i].bz);
 	glNormal3f(0,0,1);	
-	    glVertex3f(cube[i].bx,0,cube[i].bz+1);//перед
+	    glVertex3f(cube[i].bx,0,cube[i].bz+1);//РїРµСЂРµРґ
 		glVertex3f(cube[i].bx,1,cube[i].bz+1);
 		glVertex3f(cube[i].bx+1,1,cube[i].bz+1);
 		glVertex3f(cube[i].bx+1,0,cube[i].bz+1);
 	glNormal3f(-1,0,0);
-		glVertex3f(cube[i].bx,0,cube[i].bz+1);//левая
+		glVertex3f(cube[i].bx,0,cube[i].bz+1);//Р»РµРІР°СЏ
 		glVertex3f(cube[i].bx,1,cube[i].bz+1);
 		glVertex3f(cube[i].bx,1,cube[i].bz);
 		glVertex3f(cube[i].bx,0,cube[i].bz);
 	glNormal3f(1,0,0);
-		glVertex3f(cube[i].bx+1,0,cube[i].bz+1);//правая
+		glVertex3f(cube[i].bx+1,0,cube[i].bz+1);//РїСЂР°РІР°СЏ
 		glVertex3f(cube[i].bx+1,1,cube[i].bz+1);
 		glVertex3f(cube[i].bx+1,1,cube[i].bz);
 		glVertex3f(cube[i].bx+1,0,cube[i].bz);
 	glNormal3f(0,1,0);
-		glVertex3f(cube[i].bx,1,cube[i].bz);//верх
+		glVertex3f(cube[i].bx,1,cube[i].bz);//РІРµСЂС…
 		glVertex3f(cube[i].bx+1,1,cube[i].bz);
 		glVertex3f(cube[i].bx+1,1,cube[i].bz+1);
 		glVertex3f(cube[i].bx,1,cube[i].bz+1);
 	glNormal3f(0,-1,0);
-		glVertex3f(cube[i].bx,0,cube[i].bz);//низ
+		glVertex3f(cube[i].bx,0,cube[i].bz);//РЅРёР·
 		glVertex3f(cube[i].bx+1,0,cube[i].bz);
 		glVertex3f(cube[i].bx+1,0,cube[i].bz+1);
 		glVertex3f(cube[i].bx,0,cube[i].bz+1);
@@ -583,7 +583,7 @@ for(int i = 1; i<cube[0].num ;i++)
 
 void Snake::Tick()
 {
-//Движение
+//Р”РІРёР¶РµРЅРёРµ
 	for(int i = cube[0].num; i>0; --i)
 	{
 		cube[i].bx=cube[i-1].bx;
@@ -597,7 +597,7 @@ void Snake::Tick()
 		cube[0].bx+=1;
 	if(game.dir==3) 
 		cube[0].bz+=1;
-//Еда+++
+//Р•РґР°+++
 	for(int i = 0;i<5;i++)
 	{
 			if((game.dir==0) && (cube[0].bx==m[i].fx)  && (cube[0].bz==m[i].fz-1))
@@ -631,7 +631,7 @@ void Snake::Tick()
 		}
 	}
 //++++++++
-//Границы====
+//Р“СЂР°РЅРёС†С‹====
 	if(game.lvl==1)
 	{
 		game.detected(0);
@@ -646,7 +646,7 @@ void Snake::Tick()
 		game.detected(1);
 	}	
 //============
-//Есть самого себя
+//Р•СЃС‚СЊ СЃР°РјРѕРіРѕ СЃРµР±СЏ
 		for(int i=1;i<cube[0].num;i++)
 		{
 			if((cube[0].bx==cube[i].bx) && cube[0].bz==cube[i].bz) 
@@ -666,7 +666,8 @@ void Snake::Tick()
 				game.death++;
 			}
 		}
-//Смерть-------
+//РЎРјРµСЂС‚СЊ-------
 		game.Death();
 //-------
 }
+
